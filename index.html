@@ -13,7 +13,7 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <img src="images/header" alt="Hero Image for Elysian Studios" height="300" width="1230">
+            <img src="images/header.jpg" alt="Hero Image for Elysian Studios" height="492" width="1230">
             <div id="mainNav">
                 <ul>
                     <li><a href="javascript:void(0);">services</a></li>
@@ -27,7 +27,7 @@
         <div id="main">
             <div id="services">
                <h1>Services</h1>
-                <div class="threeColumnParent clearfix">
+                <div class="threeColumnParent flex clearfix">
                     <div class="threeColumn boxShadow">
                         <a href="javascript:void(0);"><img src="images/website.png"></a>
                         <h2>Websites</h2>
@@ -56,7 +56,7 @@
                 
                 <!--        End of Services Three Column        -->
                 
-                <div class="fourColumnParent clearfix">
+                <div class="fourColumnParent flex clearfix">
                     <div class="fourColumn boxShadow">
                         <a href="javascript:void(0);"><img src="images/wewrite.png" alt="We write"></a>
                         <h2>We Write</h2>
@@ -95,7 +95,7 @@
                         
             <div id="portfolio">
                 <h1>Portfolio</h1>
-                <div class="threeColumnParent clearfix">
+                <div class="threeColumnParent flex clearfix">
                     <div class="threeColumn boxShadow">
                         <a href="javascript:void(0);"><img src="images/harrods-logo.png" alt="Harrods Logo" height="150" width="290"></a>
                         <h2>Website Development</h2>
@@ -121,7 +121,7 @@
 
                 <!--       End of Portfolio Three Column       --> 
 
-                <div class="threeColumnParent clearfix">
+                <div class="threeColumnParent flex clearfix">
                     <div class="threeColumn boxShadow samples">
                         <h2>Website Samples</h2>
                         <a href="javascript:void(0);"><img src="images/skinjay.jpg" alt="SkinJay website" height="70" width="134"></a>
@@ -151,7 +151,7 @@
             
             <div id="about">
                 <h1>About</h1>
-                <div class="threeColumnParent clearfix">
+                <div class="threeColumnParent flex clearfix">
                     <div class="threeColumn boxShadow">
                         <a href="javascript:void(0);"><img src="images/Bio2.jpg" alt="Jane Doe" height="420" width="290"></a>
                         <h2>Jane Doe</h2>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="threeColumn boxShadow lastColumn">
                         <a href="javascript:void(0);"><img src="images/Bio3.jpg" alt="Ralph Lauren"  height="420" width="290"></a>
-                        <h2>Todd Blau</h2>
+                        <h2>Ralph Lauren</h2>
                         <h3>Lead Developer</h3>
                         <p>
                             Ralph Lauren has a BS in Design and has over 9 years of development experience. Ralph loves “being the ball” and enjoys playing golf with Nixon.
@@ -180,7 +180,7 @@
                 
                 <!--       End of About Three Column       --> 
                 
-                <div class="threeColumnParent clearfix">
+                <div class="threeColumnParent flex clearfix">
                     <div class="threeColumn boxShadow">
                         <h2>We Love What We Do</h2>
                         <p>
@@ -209,35 +209,46 @@
             
             <div id="contacts">
                 <div class="twoColumnParent clearfix">
-                   <div class="twoColumn">
-                        <h2>555 555 5555</h2>
-                        <h2><a href="javascript:void();">elysianstudios.xyz</a></h2>
-                        <div class="twoColumParent clearfix">
-                            <div class="twoColumn">
-                                <h2>Office Location</h2>
-                                <p>1314 Oxford St.</p>
-                                <p>London, On. N6E-3J1</p>
-                                <p>Canada</p>
-                            </div>
-                            <div class="twoColumn lastColumn">
-                                <h2>Office Hours</h2>
-                                <p>Monday-Thursday</p>
-                                <p>8am-4:30pm (EST)</p>
+                    <div class="leftColumn">
+                        <h3>555 555 5555</h3>
+                        <h3><a href="javascript:void(0);">elysianstudios.xyz</a></h3>
+                        <div class="locationInfo clearfix">
+                           <div class="flex">
+                                <div class="twoColumn">
+                                    <h2>Office Location</h2>
+                                    <p>1314 Oxford St.</p>
+                                    <p>London, On. N6E-3J1</p>
+                                    <p>Canada</p>
+                                </div>
+                                <div class="twoColumn lastColumn">
+                                    <h2>Office Hours</h2>
+                                    <p>Monday-Thursday</p>
+                                    <p>8am-4:30pm (EST)</p>
+                                    <p>Friday</p>
+                                    <p>9am-3:30pm (EST)</p>
+                                </div>
                             </div>
                         </div>
                         <div id="googleMap">
                             <!--             This would be the google map object               -->
                         </div>
                     </div>
-                    <div class="twoColumn">
+                    <div class="rightColumn">
                         <h2>Get In Touch</h2>
                         <p>
                             Tell us about your project! We typically respond within two business days to set up a meeting where we can get to know each other and start defining goals, scope, budget, and timeline.
                         </p>
-                        <div id="emailform" class="lastColumn">
-                            <!--             This would be the email form               -->
-                            <a href="mailto:hello@elysianstudios.com">Submit</a>
-                        </div>
+                        <div>
+                            <form>
+                                Name: <input type="text" name="name" />
+                                <br>
+                                Email: <input type="email" name="email" />
+                                <br>
+                                <textarea name="content"></textarea>
+                                <br>
+                                <input type="submit" name="submit"/>
+                            </form>
+                        </div>             
                     </div>
                 </div>
             </div>
@@ -246,12 +257,14 @@
         <!--       End of About        -->
         
         <div id="pageFooter">
-            <ul>
-                <li><a href="javascript:void(0);"><img src="images/blogger_32.png" alt="Blogger" height="32" width="32"></a></li>
-                <li><a href="javascript:void(0);"><img src="images/facebook_32.png" alt="Facebook" height="32" width="32"></a></li>
-                <li><a href="javascript:void(0);"><img src="images/tumblr_32.png" alt="Tumblr" height="32" width="32"></a></li>
-                <li><a href="javascript:void(0);"><img src="images/twitter_32.png" alt="Twitter" height="32" width="32"></a></li>
-            </ul>
+            <div class="flex">
+                <ul>
+                    <li><a href="javascript:void(0);"><img src="images/blogger_32.png" alt="Blogger" height="32" width="32"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/facebook_32.png" alt="Facebook" height="32" width="32"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/tumblr_32.png" alt="Tumblr" height="32" width="32"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/twitter_32.png" alt="Twitter" height="32" width="32"></a></li>
+                </ul>
+            </div>
             <p>&copy; 2014 Elysian Studios. All Rights Reserved.</p>
         </div>
     </div>
