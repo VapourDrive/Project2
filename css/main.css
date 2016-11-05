@@ -12,7 +12,7 @@ body {
 /* ---- Structure ---- */
 #wrapper {
     background-color: #eaeaea;
-    padding: 0 80px;
+    padding: 0 0px;
     width: 1230px;
     margin-left: auto;
     margin-right: auto;
@@ -26,26 +26,19 @@ body {
 
 .fourColumnParent, .threeColumnParent {
     margin: 60px 0;
+    padding: 0 66px;
 }
 
 .threeColumn, .fourColumn {
     background-color: #f8f8f8;
     float: left;
-    width: 290px;
-    margin: 0 20px;
+    width: 250px;
+    margin: 0 50px 0 0;
     padding: 40px;
 }
 
 .fourColumn {
-    width: 187px;
-}
-
-.twoColumn {
-    width: 100px;
-}
-
-.lastColumn {
-    float: right;
+    width: 155px;
 }
 
 .boxShadow {
@@ -61,24 +54,24 @@ body {
 }
 
 .twoColumnParent {
-    margin: 60px 0;
+    margin: 60px 30px;
 }
 
 .leftColumn {
     float: left;
-    width: 750px;
+    width: 650px;
 }
 .rightColumn {
-    float: left;
-    width: 480px;
+    float: right;
+    width: 440px;
 }
 
 .twoColumn {
     background-color: #f8f8f8;
     float: left;
-    width: 240px;
-    margin: 0 40px 0 0;
-    padding: 40px;
+    width: 210px;
+    padding: 30px;
+    margin: 0 30px 0 0;
 }
 .flex {
     display: -webkit-flex;
@@ -86,6 +79,15 @@ body {
 }
 .locationInfo {
     margin-top: 20px;
+}
+
+.lastColumn {
+    float: right;
+    margin: 0 0 0 0;
+}
+
+#contacts {
+    padding: 20px 40px 10px 40px;
 }
 
 /* ---- Typography ---- */
@@ -136,32 +138,28 @@ a {
     color: #727272;
 }
 
-
-#mainNav ul{
+#mainNav > ul {
     text-align: center;
     font-size: 0;
     margin: 40px auto;
 }
-
-#mainNav ul li{
+#mainNav > ul li {
     display: inline-block;
-    width: 250px;
-    text-align: center;
 }
-
-#mainNav ul li a{
+#mainNav > ul a {
     display: inline-block;
-    margin: 0 0;
+    text-align: center;
+    margin: 10px 60px;
     color: #727272;
+    transition: 0.2s color linear;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 20px;
     letter-spacing: 3px;
 }
-#mainNav ul li a:hover{
-    color: #3b3b3b;
-    transition-delay: 0.1s;
-    transition-duration: 0.2s;
+
+#mainNav > ul, a:hover {
+    color: #3b3b3b;  
 }
 
 /*  ---- Page Elements ---- */
@@ -183,12 +181,13 @@ input[type=email], input[type=text] {
 textarea {
     margin-top: 10px;
     height: 100px;
-    width: 400px;
+    width: 430px;
     resize: none;
 }
 
+
 #pageFooter{
-    padding-bottom: 40px;
+    padding: 20px 40px 40px 40px;
     text-align: center;
 }
 
